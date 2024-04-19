@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <title>{{ the_name }}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-  <h1>加上一个字</h1>
-  <div id="chart-container"></div>
-  <script src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
-  <script src="./index.js"></script>
-</body>
+
+  <head>
+    <meta charset="utf-8">
+    <title>服务器负载展示</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+
+  <body>
+    <h1>
+      <p style="text-align: center;">
+        第{{ time_id }}秒
+      </p>
+    </h1>
+
+    <h4>
+      <p style="text-align: center;">
+        <span>
+          <a href="/1">1</a>&nbsp;
+          <a href="/2">2</a>&nbsp;
+          <a href="/3">3</a>&nbsp;
+          <a href="/4">4</a>&nbsp;
+          <a href="/5">5</a>&nbsp;
+          <a href="/6">6</a>&nbsp;
+          <a href="/7">7</a>&nbsp;
+          <a href="/8">8</a>&nbsp;
+          <a href="/9">9</a>&nbsp;
+          <a href="/10">10</a>&nbsp;
+        </span>
+      </p>
+    </h4>
+
+    <div id="chart-container"></div>
+    <script src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+    <script src="./index.js/{{ time_id }}"></script>
+  </body>
+
 </html>

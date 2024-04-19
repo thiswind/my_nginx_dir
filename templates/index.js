@@ -9,12 +9,12 @@ var option;
 
 // prettier-ignore
 const hours = [
-    '第一列', '第二列', '第三列','第四列', '第五列',
+  '第一列', '第二列', '第三列', '第四列', '第五列', '第六列', '第七列', '第八列', '第九列', '第十列'
 ];
+
 // prettier-ignore
 const days = [
-    '第一排', '第二排', '第三排',
-    '第四排', '第五排'
+  '第一排', '第二排', '第三排', '第四排', '第五排', '第六排', '第七排', '第八排', '第九排', '第十排'
 ];
 // prettier-ignore
 const data = [
@@ -22,7 +22,7 @@ const data = [
 ]
     .map(function (item) {
     return [item[1], item[0], item[2] || '-'];
-});
+  });
 option = {
   tooltip: {
     position: 'top'
@@ -47,7 +47,7 @@ option = {
   },
   visualMap: {
     min: 0,
-    max: 10,
+    max: 100,
     calculable: true,
     orient: 'horizontal',
     left: 'center',
